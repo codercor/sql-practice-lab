@@ -18,6 +18,13 @@ A simple local SQL learning platform for practicing PostgreSQL with a prepared r
 docker compose up --build
 ```
 
+If you already built an older image and the app does not open, reset the local containers and rebuild:
+
+```bash
+docker compose down -v
+docker compose up --build
+```
+
 Open:
 
 ```text
