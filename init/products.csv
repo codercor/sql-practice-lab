@@ -1,0 +1,16 @@
+product_id,product_name,category,brand,unit_price,stock_quantity,is_active
+1,Wireless Mouse,Electronics,Northwind,24.99,120,true
+2,Mechanical Keyboard,Electronics,KeyLab,89.90,55,true
+3,USB-C Hub,Electronics,Porto,49.50,80,true
+4,Noise Cancelling Headphones,Electronics,SoundPeak,149.00,30,true
+5,Desk Lamp,Home,Luma,39.95,42,true
+6,Ergonomic Chair,Home,SitWell,229.00,18,true
+7,Notebook Set,Books,Paperly,12.50,200,true
+8,SQL Pocket Guide,Books,DataPress,32.00,75,true
+9,Yoga Mat,Fitness,Flexi,27.75,90,true
+10,Resistance Bands,Fitness,Flexi,18.40,130,true
+11,Coffee Grinder,Kitchen,BrewCo,64.99,22,true
+12,Travel Mug,Kitchen,BrewCo,21.20,100,true
+13,Laptop Stand,Accessories,Northwind,44.00,65,true
+14,Cable Organizer,Accessories,TidyTech,9.99,250,true
+15,Legacy Webcam,Electronics,OldCam,34.95,0,false

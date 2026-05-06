@@ -1,0 +1,21 @@
+customer_id,first_name,last_name,email,city,country,signup_date,segment
+1,Aylin,Kaya,aylin.kaya@example.com,Istanbul,Turkey,2023-01-12,Consumer
+2,Mehmet,Demir,mehmet.demir@example.com,Ankara,Turkey,2023-02-04,Small Business
+3,Sophie,Muller,sophie.muller@example.com,Berlin,Germany,2023-02-20,Consumer
+4,Lukas,Schmidt,lukas.schmidt@example.com,Hamburg,Germany,2023-03-15,Enterprise
+5,Emma,Johnson,emma.johnson@example.com,London,UK,2023-04-02,Consumer
+6,Oliver,Brown,oliver.brown@example.com,Manchester,UK,2023-05-10,Small Business
+7,Claire,Dupont,claire.dupont@example.com,Paris,France,2023-06-01,Consumer
+8,Noah,Martin,noah.martin@example.com,Lyon,France,2023-06-18,Enterprise
+9,Mia,Wilson,mia.wilson@example.com,New York,USA,2023-07-07,Consumer
+10,James,Taylor,james.taylor@example.com,Austin,USA,2023-07-24,Small Business
+11,Eva,Garcia,eva.garcia@example.com,Madrid,Spain,2023-08-03,Consumer
+12,Lucas,Rossi,lucas.rossi@example.com,Milan,Italy,2023-08-29,Enterprise
+13,Nora,Jansen,nora.jansen@example.com,Amsterdam,Netherlands,2023-09-11,Consumer
+14,Adam,Smith,adam.smith@example.com,Toronto,Canada,2023-10-05,Small Business
+15,Lea,Fischer,lea.fischer@example.com,Munich,Germany,2023-10-19,Consumer
+16,Deniz,Yilmaz,deniz.yilmaz@example.com,Izmir,Turkey,2023-11-02,Enterprise
+17,Grace,Lee,grace.lee@example.com,Seattle,USA,2023-11-26,Consumer
+18,Theo,Bernard,theo.bernard@example.com,Nice,France,2023-12-09,Small Business
+19,Hannah,Clark,hannah.clark@example.com,Dublin,Ireland,2024-01-17,Consumer
+20,Arda,Celik,arda.celik@example.com,Bursa,Turkey,2024-02-21,Consumer

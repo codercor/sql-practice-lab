@@ -1,0 +1,81 @@
+order_id,customer_id,product_id,order_date,quantity,discount_percent,status,payment_method
+1,1,2,2024-01-05,1,0,Completed,Card
+2,2,5,2024-01-08,2,10,Completed,PayPal
+3,3,8,2024-01-12,1,0,Completed,Card
+4,4,6,2024-01-15,1,15,Completed,Bank Transfer
+5,5,1,2024-01-18,3,0,Completed,Card
+6,6,12,2024-01-22,2,5,Cancelled,Card
+7,7,4,2024-02-02,1,10,Completed,PayPal
+8,8,11,2024-02-07,1,0,Completed,Card
+9,9,3,2024-02-10,2,0,Completed,Card
+10,10,14,2024-02-14,5,0,Completed,PayPal
+11,11,7,2024-02-18,4,5,Completed,Card
+12,12,13,2024-02-21,1,0,Returned,Card
+13,13,9,2024-03-01,2,0,Completed,Card
+14,14,10,2024-03-04,3,10,Completed,Bank Transfer
+15,15,2,2024-03-08,1,0,Completed,Card
+16,16,6,2024-03-13,1,20,Completed,PayPal
+17,17,4,2024-03-17,1,5,Completed,Card
+18,18,8,2024-03-21,2,0,Completed,Card
+19,19,12,2024-03-28,1,0,Cancelled,PayPal
+20,1,1,2024-04-02,2,0,Completed,Card
+21,2,3,2024-04-06,1,5,Completed,Card
+22,3,5,2024-04-09,2,0,Completed,Bank Transfer
+23,4,9,2024-04-12,3,0,Completed,PayPal
+24,5,10,2024-04-16,4,10,Completed,Card
+25,6,11,2024-04-20,1,0,Completed,Card
+26,7,13,2024-04-25,2,0,Returned,Card
+27,8,14,2024-05-01,6,0,Completed,PayPal
+28,9,2,2024-05-05,1,15,Completed,Card
+29,10,4,2024-05-10,1,0,Completed,Card
+30,11,6,2024-05-14,1,10,Completed,Bank Transfer
+31,12,8,2024-05-18,2,0,Completed,Card
+32,13,1,2024-05-21,3,0,Completed,PayPal
+33,14,5,2024-06-03,2,0,Completed,Card
+34,15,7,2024-06-06,5,5,Completed,Card
+35,16,12,2024-06-09,2,0,Completed,PayPal
+36,17,3,2024-06-13,1,0,Cancelled,Card
+37,18,11,2024-06-16,1,15,Completed,Bank Transfer
+38,19,10,2024-06-20,2,0,Completed,Card
+39,1,4,2024-07-02,1,10,Completed,Card
+40,2,14,2024-07-05,8,0,Completed,PayPal
+41,3,13,2024-07-09,1,0,Completed,Card
+42,4,12,2024-07-12,2,0,Returned,Card
+43,5,8,2024-07-16,1,0,Completed,Card
+44,6,9,2024-07-20,3,5,Completed,PayPal
+45,7,1,2024-08-02,2,0,Completed,Card
+46,8,2,2024-08-04,1,10,Completed,Card
+47,9,6,2024-08-08,1,0,Completed,Bank Transfer
+48,10,7,2024-08-12,4,0,Completed,Card
+49,11,11,2024-08-18,1,0,Cancelled,PayPal
+50,12,5,2024-08-22,2,0,Completed,Card
+51,13,3,2024-09-01,2,5,Completed,Card
+52,14,4,2024-09-04,1,0,Completed,PayPal
+53,15,10,2024-09-07,5,10,Completed,Card
+54,16,13,2024-09-11,1,0,Completed,Card
+55,17,8,2024-09-14,2,0,Completed,Bank Transfer
+56,18,12,2024-09-20,3,0,Returned,Card
+57,19,1,2024-10-03,1,0,Completed,Card
+58,1,6,2024-10-06,1,20,Completed,PayPal
+59,2,11,2024-10-09,2,0,Completed,Card
+60,3,14,2024-10-13,7,0,Completed,Card
+61,4,2,2024-10-17,1,0,Completed,Bank Transfer
+62,5,3,2024-10-21,2,0,Completed,PayPal
+63,6,4,2024-11-02,1,15,Completed,Card
+64,7,5,2024-11-05,2,0,Completed,Card
+65,8,7,2024-11-08,3,0,Completed,PayPal
+66,9,9,2024-11-12,2,5,Completed,Card
+67,10,12,2024-11-16,1,0,Cancelled,Card
+68,11,13,2024-11-20,2,0,Completed,Bank Transfer
+69,12,1,2024-12-03,2,0,Completed,Card
+70,13,8,2024-12-07,1,10,Completed,Card
+71,14,3,2024-12-10,2,0,Completed,PayPal
+72,15,4,2024-12-14,1,0,Completed,Card
+73,16,10,2024-12-18,4,5,Completed,Card
+74,17,14,2024-12-22,10,0,Completed,Bank Transfer
+75,18,2,2025-01-04,1,0,Completed,Card
+76,19,6,2025-01-08,1,10,Completed,PayPal
+77,1,8,2025-01-13,2,0,Completed,Card
+78,2,9,2025-01-17,3,0,Completed,Card
+79,3,12,2025-01-21,2,5,Completed,Bank Transfer
+80,4,13,2025-01-25,1,0,Completed,Card

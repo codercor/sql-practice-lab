@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0a0f1a;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  color: #e5eefc;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+}
