@@ -23,6 +23,42 @@ type EvaluationPayload = {
 type ResultTab = "results" | "evaluation" | "error";
 
 const emptyEditorSql = "-- Write your SQL answer here\n";
+const initialSchema: SchemaPayload = { tables: [], relationships: [] };
+
+function wait(milliseconds: number) {
+  return new Promise((resolve) => {
+    window.setTimeout(resolve, milliseconds);
+  });
+}
+
+async function fetchJson<T>(url: string, retries = 6): Promise<T> {
+  let lastError: Error | undefined;
+
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    try {
+      const response = await fetch(url, { cache: "no-store" });
+      const text = await response.text();
+
+      if (!response.ok) {
+        throw new Error(`${url} returned ${response.status}: ${text || response.statusText}`);
+      }
+
+      if (!text.trim()) {
+        throw new Error(`${url} returned an empty response.`);
+      }
+
+      return JSON.parse(text) as T;
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(`Failed to load ${url}.`);
+
+      if (attempt < retries) {
+        await wait(500);
+      }
+    }
+  }
+
+  throw lastError ?? new Error(`Failed to load ${url}.`);
+}
 
 function difficultyClass(difficulty: Question["difficulty"]) {
   return difficulty === "Easy"
@@ -112,7 +148,7 @@ function EvaluationDetailsPanel({ details }: { details?: EvaluationDetails }) {
 export default function Home() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [selectedId, setSelectedId] = useState<number | null>(null);
-  const [schema, setSchema] = useState<SchemaPayload>({ tables: [], relationships: [] });
+  const [schema, setSchema] = useState<SchemaPayload>(initialSchema);
   const [expandedTables, setExpandedTables] = useState<Record<string, boolean>>({
     customers: true,
     products: true,
@@ -128,14 +164,14 @@ export default function Home() {
 
   useEffect(() => {
     async function loadInitialData() {
-      const [questionsResponse, schemaResponse] = await Promise.all([fetch("/api/questions"), fetch("/api/schema")]);
-      const nextQuestions = (await questionsResponse.json()) as Question[];
-      const nextSchema = (await schemaResponse.json()) as SchemaPayload;
+      const nextQuestions = await fetchJson<Question[]>("/api/questions");
 
       setQuestions(nextQuestions);
-      setSchema(nextSchema);
       setSelectedId(nextQuestions[0]?.id ?? null);
       setSql(emptyEditorSql);
+
+      const nextSchema = await fetchJson<SchemaPayload>("/api/schema");
+      setSchema(nextSchema);
     }
 
     loadInitialData().catch((loadError) => {
